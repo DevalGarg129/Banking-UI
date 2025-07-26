@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.banking-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Balance display */
+.balance-card {
+  margin-bottom: 30px;
+}
+
+.balance-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.balance-amount {
+  font-size: 32px;
+  color: #2e8b57;
+  font-weight: bold;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.deposit {
+  background-color: #28a745;
+}
+
+.deposit:hover {
+  background-color: #218838;
+}
+
+.withdraw {
+  background-color: #dc3545;
+}
+
+.withdraw:hover {
+  background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
